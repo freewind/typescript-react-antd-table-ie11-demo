@@ -1,5 +1,5 @@
-TypeScript React AntDesign Table Demo
-=================================
+TypeScript React AntDesign Table Expandable Row Demo
+====================================================
 
 ```
 npm install
