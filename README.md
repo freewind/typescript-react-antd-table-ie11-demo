@@ -8,6 +8,8 @@ import 'react-app-polyfill/ie11'
 import 'react-app-polyfill/stable'
 ```
 
+由于`react-app-polyfill/stable`里面引入的也是corejs，所以在webpack中使用`@babel/preset-env`+corejs也应该可以达到一样目的。
+
 不过不知道是不是所有的组件都被支持
 
 ```
