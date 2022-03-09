@@ -5,9 +5,10 @@ module.exports = {
   mode: 'development',
   entry: './src/entry.tsx',
   devtool: "inline-source-map",
+  target: ['web', 'es5'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js']
@@ -27,5 +28,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin()
-  ]
+  ],
+  devServer: {
+    host: '0.0.0.0'
+  }
 }
